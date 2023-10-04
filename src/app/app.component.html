@@ -1,0 +1,18 @@
+<main>
+  <div>
+    <swiper
+      [slidesPerView]="1"
+      [spaceBetween]="50"
+      [navigation]="true"
+      [pagination]="{ clickable: true }"
+      [controller]="{ control: controlledSwiper }"
+      (slideChange)="onSlideChange($event)"
+    >
+    <ng-template swiperSlide *ngFor="let slide of slides; let i = index">
+        <ng-container *ngIf="slide.isActive">
+          <ng-template *ngComponentOutlet="slide.component"></ng-template>
+        </ng-container>
+      </ng-template> 
+    </swiper>
+  </div>
+</main>
