@@ -1,11 +1,7 @@
 import {
-  AfterContentInit,
   AfterViewInit,
-  ChangeDetectorRef,
   Component,
   ComponentFactoryResolver,
-  NgZone,
-  TemplateRef,
   ViewChild,
   ViewContainerRef,
 } from '@angular/core';
@@ -23,12 +19,14 @@ import SwiperCore, {
   Thumbs,
   Controller,
 } from 'swiper';
-import { BehaviorSubject } from 'rxjs';
-import Swiper from 'swiper/types/swiper-class';
 import { SlideTwoComponent } from './slides/slide-two/slide-two.component';
 import { SlideOneComponent } from './slides/slide-one/slide-one.component';
 import { SlideThreeComponent } from './slides/slide-three/slide-three.component';
 import { SlideFourComponent } from './slides/slide-four/slide-four.component';
+import { SlideFiveComponent } from './slides/slide-five/slide-five.component';
+import { SlideSixComponent } from './slides/slide-six/slide-six.component';
+import { SlideSevenComponent } from './slides/slide-seven/slide-seven.component';
+import { SlideEightComponent } from './slides/slide-eight/slide-eight.component';
 
 // install Swiper components
 SwiperCore.use([
@@ -77,15 +75,12 @@ export class AppComponent implements AfterViewInit {
       { title: '2', component: SlideTwoComponent, isActive: false },
       { title: '3', component: SlideThreeComponent, isActive: false },
       { title: '4', component: SlideFourComponent, isActive: false },
+      { title: '5', component: SlideFiveComponent, isActive: false },
+      { title: '6', component: SlideSixComponent, isActive: false },
+      { title: '7', component: SlideSevenComponent, isActive: false },
+      { title: '8', component: SlideEightComponent, isActive: false },
     ];
   }
-  // ngAfterViewInit() {
-  //   this.loadComponent(0); // Load the first component initially
-  // }
-  // loadComponent(index: number) {}
-  // onSlideChange(swiper: any) {
-  //   this.currentIndex = swiper.snapIndex;
-  // }
   ngAfterViewInit() {
     this.loadComponent(this.currentIndex);
   }

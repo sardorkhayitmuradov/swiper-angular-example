@@ -1,17 +1,27 @@
-import { AfterViewInit, Component, Input, OnInit } from '@angular/core';
+import { animate, style, transition, trigger } from '@angular/animations';
+import { Component, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'app-slide-four',
   templateUrl: './slide-four.component.html',
-  styleUrls: ['./slide-four.component.css']
+  styleUrls: ['./slide-four.component.css'],
+  animations: [
+    trigger('fadeIn', [
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate('2000ms ease-in', style({ opacity: 1 })),
+      ]),
+    ]),
+  ],
 })
-export class SlideFourComponent implements AfterViewInit {
-  animate: boolean = false;
-  isActive =false
-  constructor() { }
+export class SlideFourComponent {
+  public animate: boolean = false;
 
-  ngAfterViewInit(){
-    this.animate = false
+  @HostBinding('@fadeIn')
+  get fadeIn() {
+    return this.animate ? 'active' : 'inactive';
   }
+  constructor() {}
 
+  ngOnInit() {}
 }

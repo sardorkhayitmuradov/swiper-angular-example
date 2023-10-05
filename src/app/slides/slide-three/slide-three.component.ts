@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, Input, OnInit } from '@angular/core';
+import { HostBinding, Component, Input, OnInit } from '@angular/core';
 import { animate, style, transition, trigger } from '@angular/animations';
 
 @Component({
@@ -14,15 +14,14 @@ import { animate, style, transition, trigger } from '@angular/animations';
     ]),
   ],
 })
-export class SlideThreeComponent implements OnInit, AfterViewInit {
-  @Input() animate: boolean = false;
-  isActive = false;
+export class SlideThreeComponent {
+  public animate: boolean = false;
+
+  @HostBinding('@fadeIn')
+  get fadeIn() {
+    return this.animate ? 'active' : 'inactive';
+  }
   constructor() {}
 
-  ngOnInit() {
-    console.log('init three');
-  }
-  ngAfterViewInit() {
-    console.log(this.isActive);
-  }
+  ngOnInit() {}
 }
