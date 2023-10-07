@@ -1,0 +1,52 @@
+.branches-title {
+  -webkit-animation: branches-title 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: branches-title 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes branches-title {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.branches-info {
+  -webkit-animation: branches-info 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: branches-info 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 300ms;
+}
+
+@keyframes branches-info {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.branches-location {
+  -webkit-animation: branches-location 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: branches-location 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 600ms;
+}
+
+@keyframes branches-location {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
