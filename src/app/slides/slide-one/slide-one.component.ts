@@ -1,10 +1,16 @@
 import { animate, style, transition, trigger } from '@angular/animations';
-import { AfterViewInit, Component, HostBinding, Input, OnInit } from '@angular/core';
+import {
+  Component,
+  HostBinding,
+  OnInit,
+  ViewEncapsulation,
+} from '@angular/core';
 
 @Component({
   selector: 'app-slide-one',
   templateUrl: './slide-one.component.html',
   styleUrls: ['./slide-one.component.css'],
+  encapsulation: ViewEncapsulation.None,
   animations: [
     trigger('fadeIn', [
       transition(':enter', [
@@ -21,11 +27,7 @@ export class SlideOneComponent implements OnInit {
   get fadeIn() {
     return this.animate ? 'active' : 'inactive';
   }
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  
-  }
-
+  ngOnInit() {}
 }
-

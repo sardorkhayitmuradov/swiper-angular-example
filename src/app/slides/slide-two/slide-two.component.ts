@@ -1,10 +1,17 @@
 import { animate, style, transition, trigger } from '@angular/animations';
-import { AfterViewInit, Component, HostBinding, Input, OnInit } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  HostBinding,
+  OnInit,
+  ViewEncapsulation,
+} from '@angular/core';
 
 @Component({
   selector: 'app-slide-two',
   templateUrl: './slide-two.component.html',
   styleUrls: ['./slide-two.component.css'],
+  encapsulation: ViewEncapsulation.None,
   animations: [
     trigger('fadeIn', [
       transition(':enter', [
@@ -21,13 +28,13 @@ export class SlideTwoComponent implements OnInit, AfterViewInit {
   get fadeIn() {
     return this.animate ? 'active' : 'inactive';
   }
-  
-  constructor() { }
+
+  constructor() {}
 
   ngOnInit() {
-    console.log("init two")
+    console.log('init two');
   }
-  ngAfterViewInit(){
-    console.log(this.animate)
+  ngAfterViewInit() {
+    console.log(this.animate);
   }
 }

@@ -69,9 +69,9 @@ export class AppComponent implements AfterViewInit {
   container: ViewContainerRef;
   currentIndex = 0;
   public slides!: any;
-  constructor(private componentFactoryResolver: ComponentFactoryResolver) {
+  constructor() {
     this.slides = [
-      { title: '1', component: SlideOneComponent, isActive: true },
+      { title: '1', component: SlideThreeComponent, isActive: true },
       { title: '2', component: SlideTwoComponent, isActive: false },
       { title: '3', component: SlideThreeComponent, isActive: false },
       { title: '4', component: SlideFourComponent, isActive: false },
