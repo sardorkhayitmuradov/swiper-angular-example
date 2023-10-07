@@ -71,7 +71,7 @@ export class AppComponent implements AfterViewInit {
   public slides!: any;
   constructor() {
     this.slides = [
-      { title: '1', component: SlideOneComponent, isActive: true },
+      { title: '1', component: SlideTwoComponent, isActive: true },
       { title: '2', component: SlideTwoComponent, isActive: false },
       { title: '3', component: SlideThreeComponent, isActive: false },
       { title: '4', component: SlideFourComponent, isActive: false },
