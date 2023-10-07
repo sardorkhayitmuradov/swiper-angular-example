@@ -1,10 +1,11 @@
 import { animate, style, transition, trigger } from '@angular/animations';
-import { Component, HostBinding } from '@angular/core';
+import { Component, HostBinding, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-slide-five',
   templateUrl: './slide-five.component.html',
   styleUrls: ['./slide-five.component.css'],
+  encapsulation: ViewEncapsulation.None,
   animations: [
     trigger('fadeIn', [
       transition(':enter', [
