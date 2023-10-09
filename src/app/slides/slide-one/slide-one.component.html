@@ -1,44 +1,73 @@
 <div
-  class="flex h-full border pb-10 items-end pt-6 pl-8 gap-x-6 pr-10 analizator"
+  class="
+    flex
+    h-full
+    border
+    pb-10
+    pt-6
+    pl-8
+    gap-x-6
+    pr-10
+    analizator
+    lg:justify-center
+  "
 >
-  <div class="flex flex-col">
+  <div class="flex flex-col w-full lg:w-2/3">
     <div class="flex items-center gap-x-2 mb-5">
       <p
         class="
-          bg-red-500
+          bg-[#da0025]
           text-white
           py-2
           px-5
           rounded-xl
           text-2xl
           analizator-american-text
+          lg:text-3xl
         "
       >
         Американские
       </p>
       <p
         class="
-          text-red-500
+          text-[#da0025]
           py-2
           px-1
           rounded-xl
-          border border-red-500
+          border border-[#da0025]
           text-2xl
           analizator-text
+          lg:text-3xl
         "
       >
         анализаторы
       </p>
     </div>
-    <div class="flex items-start gap-x-2">
+    <div
+      class="
+        flex
+        items-start
+        gap-x-2
+        lg:gap-x-10 lg:items-center
+        max-md:items-center
+      "
+    >
       <img
         class="analizator-image"
         src="https://imgtr.ee/images/2023/10/06/0a27a7de3396c261a32c271c512a64ca.png"
-        alt="analizator"
-        width="200px"
-        height="100px"
       />
-      <p class="text-red-500 w-1/2 text-left analizator-info">
+      <p
+        class="
+          text-[#da0025]
+          lg:w-full
+          w-4/5
+          text-left
+          analizator-info
+          lg:text-xl
+          max-md:text-xl
+          max-sm:text-base
+        "
+      >
         В нашей лаборатории стоит современное, высокоточное оборудование <br />
         от <span class="font-bold">Ortho-Clinical Diagnostics</span> -лидера в
         сфере технологий лабораторной диагностики
@@ -47,10 +76,7 @@
   </div>
 
   <img
-    class="analizator-collegues"
+    class="analizator-collegues mt-10 max-md:hidden"
     src="https://imgtr.ee/images/2023/10/06/7de79b3f3dc64560a879f1445963d224.png"
-    alt="logos"
-    width="200px"
-    height="100px"
   />
 </div>

@@ -1,8 +1,8 @@
 .branch-drujba-title {
-  -webkit-animation: branch-drujba-title .6s
+  -webkit-animation: branch-drujba-title 0.6s
     cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: branch-drujba-title .6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: .2s;
+  animation: branch-drujba-title 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 0.2s;
 }
 
 @keyframes branch-drujba-title {
@@ -16,12 +16,11 @@
   }
 }
 
-
 .branch-drujba-info {
-  -webkit-animation: branch-drujba-info .6s
+  -webkit-animation: branch-drujba-info 0.6s
     cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: branch-drujba-info .6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: .5s;
+  animation: branch-drujba-info 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 0.5s;
 }
 
 @keyframes branch-drujba-info {
@@ -37,10 +36,10 @@
 }
 
 .branch-drujba-more {
-  -webkit-animation: branch-drujba-more .6s
+  -webkit-animation: branch-drujba-more 0.6s
     cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: branch-drujba-more .6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: .8s;
+  animation: branch-drujba-more 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 0.8s;
 }
 
 @keyframes branch-drujba-more {
