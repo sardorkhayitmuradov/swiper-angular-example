@@ -26,3 +26,39 @@ html {
   text-align: center;
   height: 100%;
 }
+
+@media (min-width: 0px) and (max-width: 576px) {
+  /*Tablets [601px -> 1200px]*/
+  .swiper-container {
+    height: 300px;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  /*Big smartphones [426px -> 600px]*/
+  .swiper-container {
+    height: 300px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  /*Small smartphones [325px -> 425px]*/
+  .swiper-container {
+    height: 320px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .swiper-container {
+    height: 320px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1366px) {
+  .swiper-container {
+    height: 340px;
+  }
+}
+@media (min-width: 1366px) and (max-width: 1992px) {
+  /*Small smartphones [325px -> 425px]*/
+  .swiper-container {
+    height: 340px;
+  }
+}
