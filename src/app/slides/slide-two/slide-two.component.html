@@ -7,7 +7,9 @@
     h-full
     justify-between
     max-[630px]:flex-col max-[630px]:justify-stretch max-[630px]:gap-y-4
-    lg:justify-center lg:gap-x-10
+    lg:p-16
+    xl:p-20
+    lg:gap-x-10
   "
 >
   <div
@@ -17,7 +19,7 @@
       items-start
       justify-between
       max-[630px]:w-full
-      lg:w-2/5
+      lg:w-1/2
     "
   >
     <p
@@ -28,6 +30,9 @@
         mb-2
         check-title
         max-[630px]:text-base
+        lg:text-4xl
+        xl:text-6xl
+        2xl:text-7xl
       "
     >
       <span
@@ -39,6 +44,9 @@
           border border-[#da0025]
           text-3xl
           max-[630px]:text-base
+          lg:text-4xl
+          xl:text-6xl
+          2xl:text-7xl
         "
         >Check-up</span
       >
@@ -51,6 +59,9 @@
         w-[90%]
         check-info
         max-[630px]:text-xs
+        lg:text-3xl
+        xl:text-4xl
+        2xl:text-5xl
       "
     >
       В нашей лаборатории вы можете пройти комплексные исследования вашего
@@ -66,6 +77,7 @@
         px-5
         check-more
         max-[630px]:text-sm max-[630px]:px-2
+        lg:text-4xl lg:font-bold lg:py-3
       "
     >
       подробнее >>
@@ -77,7 +89,7 @@
       flex flex-col
       justify-between
       max-[630px]:w-full max-[630px]:gap-y-2
-      lg:w-2/5
+      lg:w-1/2
     "
   >
     <div
@@ -101,6 +113,8 @@
           max-[630px]:gap-x-2
           max-[630px]:flex-wrap
           max-[630px]:gap-x-6
+          lg:text-2xl
+          xl:text-4xl
         "
       >
         <li>Женский</li>
@@ -111,9 +125,14 @@
         <li>Другие</li>
       </ul>
       <img
-        width="80px"
-        height="80px"
-        class="check-heart-image"
+        class="
+          check-heart-image
+          xl:h-[100px] xl:h-[100px]
+          h-20
+          w-20
+          xl:w-[120px] xl:h-[120px]
+          2xl:w-[150px] 2xl:h-[150px]
+        "
         src="../../../assets/images/heart.svg"
       />
     </div>
@@ -130,6 +149,7 @@
           w-full
           check-redtag
           max-[630px]:py-1 max-[630px]:text-sm
+          lg:text-4xl lg:font-bold lg:py-3
         "
       >
         СКИДКА
@@ -145,6 +165,7 @@
           text-white text-3xl
           check-20
           max-[630px]:py-1 max-[630px]:text-sm
+          lg:text-4xl lg:font-bold lg:py-3
         "
       >
         -20%

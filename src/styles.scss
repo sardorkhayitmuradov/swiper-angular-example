@@ -11,10 +11,16 @@ html {
   margin: 0;
   position: relative;
   height: 100%;
+  background-color: black;
+}
+
+body {
+  display: flex;
+  align-items: center;
 }
 
 .swiper-container {
-  width: 100%;
+  width: 100vw;
   height: 300px;
   margin: 50px auto;
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -46,19 +52,19 @@ html {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1024px) {
   .swiper-container {
-    height: 320px;
+    height: 350px;
   }
 }
-@media (min-width: 1200px) and (max-width: 1366px) {
+@media (min-width: 1024px) and (max-width: 1366px) {
   .swiper-container {
-    height: 340px;
+    height: 600px;
   }
 }
 @media (min-width: 1366px) and (max-width: 1992px) {
   /*Small smartphones [325px -> 425px]*/
   .swiper-container {
-    height: 340px;
+    height: 750px;
   }
 }
