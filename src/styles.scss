@@ -68,3 +68,10 @@ body {
     height: 750px;
   }
 }
+
+@media (min-width: 1992px) {
+  /*Small smartphones [325px -> 425px]*/
+  .swiper-container {
+    height: 750px;
+  }
+}
