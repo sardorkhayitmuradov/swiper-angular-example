@@ -19,8 +19,8 @@ import SwiperCore, {
   Thumbs,
   Controller,
 } from 'swiper';
-import { SlideTwoComponent } from './slides/slide-two/slide-two.component';
 import { SlideOneComponent } from './slides/slide-one/slide-one.component';
+import { SlideTwoComponent } from './slides/slide-two/slide-two.component';
 import { SlideThreeComponent } from './slides/slide-three/slide-three.component';
 import { SlideFourComponent } from './slides/slide-four/slide-four.component';
 import { SlideFiveComponent } from './slides/slide-five/slide-five.component';
@@ -71,7 +71,7 @@ export class AppComponent implements AfterViewInit {
   public slides!: any;
   constructor() {
     this.slides = [
-      { title: '1', component: SlideEightComponent, isActive: true },
+      { title: '1', component: SlideOneComponent, isActive: true },
       { title: '2', component: SlideTwoComponent, isActive: false },
       { title: '3', component: SlideThreeComponent, isActive: false },
       { title: '4', component: SlideFourComponent, isActive: false },
